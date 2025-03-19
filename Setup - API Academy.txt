@@ -1,0 +1,43 @@
+Setup - API Academy
+
+- Criar projeto Node
+npm init -y
+
+- Instalar o Typescript como desenvolvedor
+npm install -D typescript ts-node-dev @types/node
+
+
+- Criar arquivo de configuração do javascript (tsconfig)
+npx tsc --init
+
+- Limpar o tsconfig e acrescentar dois comandos:
+"rootDir": "./src",
+"outDir": "./dist"
+
+- Tranpilação para criar o Dist
+npx tsc
+
+- Rodar a aplicação / Edidar o arquivo package.json
+"build": "npx tsc",
+"dev": "npx ts-node-dev --respawn --transpile-only ./src/index.ts"
+
+- Instalar Express (Rotas)
+npm install express
+
+- Instalar o suporte para typescript do express
+npm i @types/express
+
+- Instalação do Prisma
+npm install prisma --save-dev
+
+- Rodar a aplicação com Prisma
+npx prisma init --datasource-provider PostgreSQL
+
+- Ler variáveis de ambiente
+npm i dotenv
+
+- Criar as migrate no banco de dados
+npx prisma migrate dev
+
+- Sincronizar o cliente com o banco
+npx prisma generate
