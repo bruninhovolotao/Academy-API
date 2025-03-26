@@ -41,3 +41,9 @@ npx prisma migrate dev
 
 - Sincronizar o cliente com o banco
 npx prisma generate
+
+- Visualizar as tabelas no Studio
+npx prisma studio
+
+- Instalar o UUID
+npm install uuid
